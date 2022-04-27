@@ -1,1 +1,1 @@
-# Geosoft-1_-bung-2
+# Geosoft-1_Uebung-2
