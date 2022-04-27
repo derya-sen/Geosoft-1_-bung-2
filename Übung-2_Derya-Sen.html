@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Derya Sen">
+    <meta name="description" content="Website to show location and Points-of-Interest">
+    <link rel="stylesheet" href="Übung-2_Derya-Sen.css">
+
+</head>
+
+<body>
+    <h1>Aufgabe 2 - Standorte und Points-of-Interest</h1>
+    <h2>Distanz zwischen zwei Koordinatenpunkten berechnen</h2>
+
+    <p>Im Folgenden besteht die Möglichkeit einen Standort im GeoJSON Format zu übergeben <br>
+        und abzusenden oder mit dem darunterliegenden Button den eigenen Standort abzufragen</p>
+
+
+    <p>Gib deinen Standort ein.</p>
+    <input type="text" name="Standort" id="standort">
+    <button id="koordinaten">Standort senden</button>
+
+    <p>Klicke auf den Button, um deinen Standort abzufragen</p>
+    <button onclick="getLocation()">Standort abfragen</button>
+    <p id="location"></p>
+
+    <p>In der folgenden Tabelle werden points-of-interest der Stadt Münster dargestellt, zu denen man nach Angabe <br>
+        bzw. Abfrage des eigenen Standortes die Entfernung berechnen lassen kann. <br>
+        Für jeden Standort werden die zugehörigen Längen- und Breitengrade angegeben. <br>
+        Die Tabelle kann mit einem Klick auf die verschiedenen Kopfzeilen auf- und absteigend sortiert werden. <br>
+    </p>
+
+    <table id="mytable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Längengrad</th>
+                <th>Breitengrad</th>
+                <th>Abstand zum Standort (in km)</th>
+            </tr>
+        </thead>
+    </table>
+    </div>
+</body>
+<script src="poi.js"></script>
+<script src="point.js"></script>
+<script src="Übung-2_Derya-Sen.js"></script>
+
+</html>
